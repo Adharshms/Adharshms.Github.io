@@ -7,6 +7,47 @@
     <title>Document</title>
 </head>
 <body>
+
+<p>
+<!DOCTYPE html>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <h2>Click the Button to Add a List Item</h2>
+
+    <!-- Button to trigger adding list -->
+    <button id="addItemButton">Add Item to List</button>
+
+    <!-- Unordered list where items will be added -->
+    <ul id="itemList">
+        <!-- List items will be added here dynamically -->
+    </ul>
+
+    <script>
+        $(document).ready(function() {
+            // Event listener for button click
+            $('#addItemButton').click(function() {
+                // Create a new list item and append it to the ul
+                var newItem = $('<li>').text('New List Item');
+                $('#itemList').append(newItem);
+            });
+        });
+    </script>
+
+</body>
+</html>
+
+
+
+
+<p>
+
+
+
+
+
+
  <p class="sender-column"> 
     Dr. Eleanor Gaye<br>
     Awesome Science faculty<br>
